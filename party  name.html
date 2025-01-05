@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andhra Pradesh Election - Vote</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('party.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Voting Container */
+        .voting-container {
+            background: #c1afaf;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .voting-container h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #4CAF50;
+        }
+
+        .party-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .party-list li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .party-list img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .party-list input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #afa9ad;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .voting-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .voting-container h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="voting-container">
+        <h1>Vote for Your Party</h1>
+        <form action="#" method="post">
+            <!-- Party Selection -->
+            <h2>Select Your Party</h2>
+            <ul class="party-list">
+                <li>
+                    <input type="radio" id="ysrcp" name="party" value="YSR Congress Party" required>
+                    <img src="ysrcp.jpg" alt="YSR Congress Party">
+                    <label for="ysrcp">YSR Congress Party</label>
+                </li>
+                <li>
+                    <input type="radio" id="tdp" name="party" value="Telugu Desam Party">
+                    <img src="tdp.jpg">
+                    <label for="tdp">Telugu Desam Party</label>
+                </li>
+                <li>
+                    <input type="radio" id="bjp" name="party" value="Bharatiya Janata Party">
+                    <img src="bjp.jpg" alt="Bharatiya Janata Party">
+                    <label for="bjp">Bharatiya Janata Party</label>
+                </li>
+                <li>
+                    <input type="radio" id="congress" name="party" value="Indian National Congress">
+                    <img src="inc.jpg">
+                    <label for="congress">Indian National Congress</label>
+                </li>
+            </ul>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Vote</button>
+        </form>
+    </div>
+</body>
+</html>

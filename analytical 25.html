@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-top: 60px; /* Space for the fixed header */
+            padding: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fixed Header: Stays at the top of the viewport
+    </header>
+
+    <div class="content">
+        <h1>Welcome to the Fixed Position Example</h1>
+        <p>Scroll down to see the header and footer stay in place.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi.</p>
+        <p>Etiam fermentum, orci id volutpat lacinia, libero eros consectetur justo, eu volutpat sapien quam at leo.</p>
+        <p>Curabitur vestibulum aliquam leo. Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus.</p>
+        <p>Vivamus laoreet. Nulla facilisi. Cras non dolor. Vivamus in erat ut urna cursus vestibulum.</p>
+    </div>
+
+    <footer>
+        Fixed Footer: Stays at the bottom of the viewport
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <h1>Laptop Specificationv Form</h1>
+  <form>
+    <label>Name: <input type="text" name="name" required></label><br><br>
+    <label>Password: <input type="password" name="password" required></label><br><br>
+    <fieldset>
+      <legend>OS Specification:</legend>
+      <label><input type="checkbox" name="os" value="macOS"> macOS</label><br>
+      <label><input type="checkbox" name="os" value="Windows"> Windows</label><br>
+      <label><input type="checkbox" name="os" value="Ubuntu"> Ubuntu</label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>Brand Specification:</legend>
+      <label><input type="radio" name="brand" value="HP" required> HP</label><br>
+      <label><input type="radio" name="brand" value="Lenova"> Lenova</label><br>
+      <label><input type="radio" name="brand" value="Dell"> Dell</label><br>
+      <label><input type="radio" name="brand" value="Apple"> Apple</label>
+    </fieldset><br>
+
+    <label>Address:<br>
+      <textarea name="address" rows="4" cols="30" required></textarea>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

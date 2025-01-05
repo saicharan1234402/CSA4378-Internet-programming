@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/HP/Documents/HTML/Registration%20Page.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Registration Container */
+        .registration-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .registration-container h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #4CAF50;
+        }
+
+        /* Form Styles */
+        .registration-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .registration-form .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .registration-form .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .registration-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .registration-container h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Register for Online Voting</h1>
+        <form action="file:///C:/Users/HP/Documents/HTML/voting%20registration%20page.html#" method="post" class="registration-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required="">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+            
+            <label for="voterid">Voter ID</label>
+            <input type="text" id="voterid" name="voterid" placeholder="Enter your voter ID" required="">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required="">
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required="">
+            
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+
+
+</body></html>
